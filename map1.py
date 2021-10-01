@@ -24,9 +24,9 @@ def color_producer(elevation):
 
 
 
-map = folium.Map(location=[38.58, -99.09], zoom_start=6, titles="Stamen Terrain")
+map = folium.Map(location=[38.58, -99.09], zoom_start=5, titles="Stamen Terrain")
 
-fgv = folium.FeatureGroup(name="My Map")
+fgv = folium.FeatureGroup(name="Volcanoes")
 
 for lt, ln, el, name in zip(lat, lon, elev, name):
     iframe = folium.IFrame(html=html % (name, name, el), width=200, height=100)
